@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
+import './Coin.css';
 
 const Coin = ({name, image, symbol, volume, price, priceChange, marketcap}) => {
     return ( 
         <div className="coin-container">
             <div className="coin-row">
                 <div className="coin">
-                    <img src={image} alt="crypto" />
+                    <img src={image} alt="crypto" className="coin-image" />
                     <div className="coin-name">{name}</div>
                     <div className="coin-symbol">{symbol}</div>
                 </div>
