@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-items: start;
     height: 80px;
-    width: 1000px;
+    width: 1020px;
     border-bottom: 1px solid grey;
 }
 .coin{
@@ -38,14 +38,14 @@
     width: 110px;
 }
 .coin-volume{
-    width: 155px;
+    width: 200px;
 }
 .coin-marketcap{
-    width: 210px;
+    width: 240px;
 }
-/* .coin-percent{
-    width:160px;
-} */
+.coin-percent{
+    width:80px;
+}
 .red{
     color:#f00606;
 }
