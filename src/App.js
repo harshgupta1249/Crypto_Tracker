@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Coin from './Coin';
-import bgimage from './assets/crypto.jpg';
 
 function App() {
   const [coins, setCoins] = useState([]);
