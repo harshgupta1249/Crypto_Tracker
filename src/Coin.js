@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Coin.css';
 
 const Coin = ({name, image, symbol, volume, price, priceChange, marketcap}) => {
@@ -11,15 +11,15 @@ const Coin = ({name, image, symbol, volume, price, priceChange, marketcap}) => {
                     <div className="coin-symbol">{symbol}</div>
                 </div>
                 <div className="coin-data">
-                    <p className="coin-price">{price}</p>
-                    <p className="coin-volume">{volume.toLocaleString()}</p>
+                    <p className="coin-price">₹ {price.toLocaleString('en-IN', {minimumFractionDigits: 2})}</p>
+                    <p className="coin-volume">₹ {volume.toLocaleString('en-IN')}</p>
                     {priceChange < 0 ? (
-                        <p className="coin-percent red">{priceChange.toFixed(2)}%</p>
+                        <p className="coin-percent red">₹ {priceChange.toFixed(2)}%</p>
                     ): (
-                        <p className="coin-percent green">{priceChange.toFixed(2)}%</p>
+                        <p className="coin-percent green">₹ {priceChange.toFixed(2)}%</p>
                     )}
                     <p className="coin-marketcap">
-                        Mkt Cap : &nbsp;{marketcap.toLocaleString()}
+                        Mkt Cap : &nbsp;₹ {marketcap.toLocaleString('en-IN')}
                     </p>
                 </div>
             </div>
