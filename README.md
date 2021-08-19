@@ -1,6 +1,7 @@
 # Crypto_Tracker
-React Application to track the crypto-currencies.
-Info : Current Price, Total Volume, Market Cap, % change in 24h.
+React Application to track the crypto-currencies.<br>
+Info : Current Price, Total Volume, Market Cap, % change in 24h.<br>
+Checkout : https://cryptotracker01.netlify.app/
 
 ### `npm start`
 Runs the app in the development mode.\
