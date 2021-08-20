@@ -44,19 +44,11 @@
     width: 265px;
 }
 .coin-percent{
-    width:75px;
+    width:72px;
 }
 .red{
     color:#f00606;
 }
 .green{
     color:#11d811;
-}
-.parallax{
-    padding:50px;
-    height:200px;
-}
-.parallax img{
-    height:200px;
-    width:100%;
 }

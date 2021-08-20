@@ -14,9 +14,9 @@ const Coin = ({name, image, symbol, volume, price, priceChange, marketcap}) => {
                     <p className="coin-price">₹ {price.toLocaleString('en-IN', {minimumFractionDigits: 2})}</p>
                     <p className="coin-volume">₹ {volume.toLocaleString('en-IN')}</p>
                     {priceChange < 0 ? (
-                        <p className="coin-percent red">₹ {priceChange.toFixed(2)}%</p>
+                        <p className="coin-percent red">{priceChange.toFixed(2)}%</p>
                     ): (
-                        <p className="coin-percent green">₹ {priceChange.toFixed(2)}%</p>
+                        <p className="coin-percent green">{priceChange.toFixed(2)}%</p>
                     )}
                     <p className="coin-marketcap">
                         Mkt Cap : &nbsp;₹ {marketcap.toLocaleString('en-IN')}
